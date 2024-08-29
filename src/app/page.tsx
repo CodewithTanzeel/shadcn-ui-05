@@ -3,9 +3,11 @@ import { ComboboxDemo } from "./combobox";
 
 export default function Home() {
   return (
-    <>
-   <h1>Shadcn-ui</h1>
+    <div className="p-5 justify-center ">
+
+   <h1 className="">Shadcn-ui</h1>
    <ComboboxDemo/>
-   </>
+    </div>
+
   );
 }
