@@ -45,9 +45,34 @@ const frameworks = [
         value: "astro",
         label: "Astro",
     },
+    {
+        value: "nuxt.js",
+        label: "Nuxt.js",
+    },
+    {
+        value: "remix",
+        label: "Remix",
+    },
+    {
+        value: "astro",
+        label: "Astro",
+    },
+
+    {
+        value: "nuxt.js",
+        label: "Nuxt.js",
+    },
+    {
+        value: "remix",
+        label: "Remix",
+    },
+    {
+        value: "astro",
+        label: "Astro",
+    },
 ]
 
-export  function ComboboxDemo() {
+export function ComboboxDemo() {
     const [open, setOpen] = React.useState(false)
     const [value, setValue] = React.useState("")
 
@@ -58,7 +83,7 @@ export  function ComboboxDemo() {
                     variant="outline"
                     role="combobox"
                     aria-expanded={open}
-                    className="w-[200px] justify-between"
+                    className="w-[600px] justify-between mt-5"
                 >
                     {value
                         ? frameworks.find((framework) => framework.value === value)?.label
@@ -66,7 +91,7 @@ export  function ComboboxDemo() {
                     <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-[200px] p-0">
+            <PopoverContent className="w-[600px] p-0">
                 <Command>
                     <CommandInput placeholder="Search framework..." className="h-9" />
                     <CommandList>
