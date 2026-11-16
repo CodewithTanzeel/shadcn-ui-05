@@ -6,3 +6,5 @@ const config = {
 };
 
 export default config;
+
+// this is a commit to check if the eclipse ide is configured
